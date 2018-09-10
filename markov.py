@@ -23,7 +23,7 @@ def get_bigram_probs(sentences, V,start_idx, end_idx, smoothing = 1):
                 bigram_probs[sentence[i], end_idx]+=1
     bigram_probs /= bigram_probs.sum(axis=1, keepdims=True) 
     return bigram_probs
-
+'''
 sentences, word2idx = get_sentences_with_word2idx_limit_vocab(10000,)
 
 V = len(word2idx)
@@ -80,4 +80,4 @@ while True:
     cont = input("Do you wan to continue Y/n? ")
     if cont and cont.lower() in ('N','n'):
         break
-     
+'''    
